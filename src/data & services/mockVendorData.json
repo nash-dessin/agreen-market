@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Green Valley Farm",
+    "location": "Nairobi",
+    "speciality": "Vegetables",
+    "image": "src\\assets\\organic prod1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Sunrise Farm",
+    "location": "Kiambu",
+    "speciality": "Florals",
+    "image": "src\\assets\\flower shop.jpg"
+
+  },
+  {
+    "id": 3,
+    "name": "Highland Harvest",
+    "location": "Nakuru",
+    "speciality": "Bakery",
+    "image": "src\\assets\\bakehouse.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Molo Harvest Hub",
+    "location": "Molo",
+    "speciality": "Preserved goods",
+    "image": "src\\assets\\provisions.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Baker's Corner",
+    "location": "Eldoret",
+    "speciality": "Bakery",
+    "image": "src\\assets\\boulangerie.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Nakuru Organic Growers",
+    "location": "Nakuru",
+    "speciality": "Vegetables",
+    "image": "src\\assets\\organic prod2.jpg"
+  }
+
+]

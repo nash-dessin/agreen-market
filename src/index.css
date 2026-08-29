@@ -1,0 +1,169 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@8..144,300;8..144,600;8..144,900&family=Work+Sans:wght@300;400;600&family=DM+Mono:wght@400;500&display=swap');
+
+:root{
+  --bg: #F5F0E8; 
+  --bg-card: #FBF7F2; 
+  --deep-umber: #2E1B14; 
+  --terracotta: #C45A3C; 
+  --sage: #8AA58D; 
+  --muted: #7A6E63; 
+  --radius: 10px;
+  --max-width: 1100px;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family: 'Work Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg) 0%, #F7F3EE 100%);
+  color:var(--deep-umber);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+.app-container{
+  max-width:var(--max-width);
+  margin:48px auto;
+  padding:32px;
+}
+
+.section{
+  background:transparent;
+  padding:28px 24px;
+  margin-bottom:28px;
+  position:relative;
+  counter-increment:section-counter;
+}
+
+.section::before{
+  content: counter(section-counter, decimal-leading-zero) ".";
+  position:absolute;
+  left:-72px;
+  top:28px;
+  font-family:'DM Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+  color:var(--muted);
+  font-size:20px;
+}
+
+.section-title{
+  display:flex;
+  align-items:baseline;
+  gap:18px;
+}
+
+.h1{
+  font-family:'Fraunces', Georgia, serif;
+  font-weight:900;
+  font-size:40px;
+  margin:0 0 8px 0;
+  letter-spacing:-0.02em;
+}
+
+.subtle{
+  color:var(--muted);
+  font-size:15px;
+}
+
+/* Hero */
+.hero{
+  display:grid;
+  grid-template-columns: 1fr 360px;
+  gap:22px;
+  align-items:stretch;
+  background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+  padding:20px;
+  border-radius:var(--radius);
+  background-color:var(--bg-card);
+}
+
+.hero-left{
+  padding:18px 6px;
+}
+
+.hero-headline{
+  font-family:'Fraunces', Georgia, serif;
+  font-size:48px;
+  margin:0 0 12px 0;
+  color:var(--deep-umber);
+}
+
+.hero-meta{display:flex;gap:12px;align-items:center}
+.stat-tile{
+  background:var(--sage);
+  color:white;
+  padding:12px 14px;
+  border-radius:8px;
+  font-weight:600;
+  font-family:'Work Sans', sans-serif;
+}
+
+.collage{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+}
+.collage img{width:100%;height:180px;object-fit:cover;border-radius:6px}
+
+/* Vendor Directory */
+.filters{
+  display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap
+}
+.filter-btn{
+  background:transparent;border:1px solid rgba(46,27,20,0.08);padding:8px 12px;border-radius:8px;cursor:pointer;font-weight:600;font-size:14px
+}
+.filter-btn[data-active="true"]{background:var(--terracotta);color:white;border-color:transparent}
+
+.vendor-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+  gap:18px;
+}
+.vendor-card{
+  background:var(--bg-card);
+  border-radius:12px;
+  padding:12px;
+  box-shadow:0 6px 18px rgba(46,27,20,0.06);
+  cursor:pointer;
+}
+.vendor-media{height:140px;border-radius:8px;overflow:hidden;margin-bottom:10px}
+.vendor-media img{width:100%;height:100%;object-fit:cover}
+.vendor-title{display:flex;justify-content:space-between;align-items:center}
+.vendor-name{font-family:'Fraunces', serif;font-size:18px;margin:0}
+.vendor-category{font-size:12px;color:var(--muted)}
+.vendor-price{font-family:'DM Mono',monospace;color:var(--deep-umber)}
+.vendor-expanded{margin-top:10px;padding-top:10px;border-top:1px dashed rgba(46,27,20,0.06)}
+
+/* In Season panel */
+.in-season{
+  display:flex;gap:22px;align-items:flex-start;padding:18px;border-radius:12px;background:var(--deep-umber);color:white
+}
+.in-season-list{flex:1}
+.in-season h3{font-family:'Fraunces',serif;margin:0 0 8px 0}
+.price{font-family:'DM Mono',monospace;color:#fff;background:rgba(255,255,255,0.05);padding:2px 6px;border-radius:6px;margin-left:8px}
+.quote{background:rgba(138,165,141,0.08);padding:10px;border-radius:8px;color:var(--bg-card);font-style:italic}
+
+/* Schedule */
+.schedule-list{display:flex;gap:12px}
+.schedule-item{flex:1;padding:14px;border-radius:10px;background:var(--bg-card)}
+.schedule-item h4{margin:0 0 6px 0;font-family:'Fraunces',serif}
+.schedule-item p{margin:0;color:var(--muted)}
+
+/* Footer */
+.footer{display:flex;justify-content:space-between;align-items:center;padding:18px;border-radius:8px;background:transparent;color:var(--muted)}
+
+/* Responsive */
+@media (max-width:880px){
+  .hero{grid-template-columns:1fr}
+  .hero-left{order:2}
+  .collage img{height:120px}
+  .hero-headline{font-size:34px}
+}
+
+
+.kicker{font-family:'DM Mono',monospace;color:var(--muted);font-size:13px}
+.p--muted{color:var(--muted)}
+
+
+.filter-btn:focus,.vendor-card:focus{outline:3px solid rgba(196,90,60,0.18);outline-offset:2px}

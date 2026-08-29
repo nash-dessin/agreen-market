@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+  <rect width="100%" height="100%" fill="#EFE7DE"/>
+  <g fill="#C2B6AA">
+    <rect x="80" y="80" width="1040" height="640" rx="8"/>
+  </g>
+  <text x="50%" y="50%" fill="#8B7F78" font-family="DM Mono, monospace" font-size="36" text-anchor="middle" dominant-baseline="middle">Photo</text>
+</svg>

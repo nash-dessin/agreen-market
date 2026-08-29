@@ -1,10 +1,10 @@
-# 🌱 Farmer's Market
+# 🌱 Agri-Market 
 
 A responsive React web application for discovering local farmers, browsing fresh produce, and managing a simple market shopping experience.
 
 ## 📌 Project Overview
 
-**Farmer's Market** is a frontend web application designed to connect customers with local farmers and vendors.
+**AgriMarket** is a frontend web application designed to connect customers with local farmers and vendors.
 
 Users can browse available produce, search and filter products, view vendor and market information, and manage selected items through a simple shopping cart. The application also integrates an external API to provide additional information relevant to the market experience.
 
@@ -174,45 +174,6 @@ Testing will focus on **logic and utility functions** rather than attempting to 
 
 ---
 
-# 📋 Project Rubric
-
-| Requirement             | Implementation                           | Priority |
-| ----------------------- | ---------------------------------------- | -------: |
-| HTML fundamentals       | Semantic structure and accessible markup |      ⭐⭐⭐ |
-| CSS fundamentals        | Layout, styling, responsive design       |      ⭐⭐⭐ |
-| JavaScript fundamentals | Functions, arrays, objects, events       |      ⭐⭐⭐ |
-| React                   | Components, props, state, events         |      ⭐⭐⭐ |
-| React forms             | Search/cart/user interactions            |      ⭐⭐⭐ |
-| API / Fetch             | External API integration                 |      ⭐⭐⭐ |
-| Error handling          | API loading/error states                 |       ⭐⭐ |
-| Local Storage           | Persistent cart/favourites               |       ⭐⭐ |
-| Jest                    | Unit tests for core logic                |       ⭐⭐ |
-| Git/GitHub              | Version control and meaningful commits   |      ⭐⭐⭐ |
-| Authentication          | Mock/optional depending on requirements  |        ⭐ |
-| Maps                    | Optional location feature                |        ⭐ |
-
----
-
-# 🚀 Minimum Viable Product
-
-The following functionality defines the minimum completed project:
-
-* [ ] Responsive navigation
-* [ ] Home page
-* [ ] Product catalogue
-* [ ] Product cards
-* [ ] Product search
-* [ ] Category filtering
-* [ ] Vendor information
-* [ ] Add/remove cart functionality
-* [ ] Cart total calculation
-* [ ] React component structure
-* [ ] External API integration
-* [ ] Loading and error states
-* [ ] At least a few Jest tests
-* [ ] Git repository with development history
-
----
 
 # 🌟 Stretch Features
 
@@ -256,7 +217,7 @@ Example product:
   id: 1,
   name: "Fresh Tomatoes",
   category: "Vegetables",
-  price: 150,
+  price: KES 150,
   unit: "kg",
   vendor: "Green Valley Farm",
   available: true
@@ -292,8 +253,6 @@ If an API key is required, create an environment file according to the project's
 ```text
 .env
 ```
-
-Do not commit private API keys to GitHub.
 
 ---
 

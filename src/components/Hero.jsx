@@ -6,8 +6,8 @@ export default function Hero() {
       <div className="hero-left">
         <div className="section-title">
           <div>
-            <div className="kicker">Grown here, sold here.</div>
-            <h1 id="hero-title" className="hero-headline">Fresh produce, straight from local farmers.</h1>
+            <div className="kicker">Fresh produce, straight from local farmers.</div>
+            <h1 id="hero-title" className="hero-headline">Grown here, sold here.</h1>
             <p className="subtle">Seasonal, thoughtfully-grown produce and handcrafted goods from our region.</p>
             <div style={{ marginTop: 16 }}>
               <a href="#featured-products" className="filter-btn">Browse Products</a>

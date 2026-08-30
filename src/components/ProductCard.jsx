@@ -3,7 +3,7 @@ import React from "react";
 export default function ProductCard({ product = {} }) {
   const farmName = product.farm || product.vendor || "Local farm";
   const productName = product.name || product.title || "Product";
-  const priceText = product.price ? `${product.price} / kg` : "Price not available";
+  const priceText = product.price ? `${product.price}` : "Price not available";
 
   return (
     <article className="vendor-card" style={{ cursor: "default" }} aria-label={productName}>

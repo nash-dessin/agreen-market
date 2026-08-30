@@ -6,14 +6,14 @@ const SAMPLE_VENDORS = [
     id: 1,
     name: "Green Valley Farm",
     specialty: "produce",
-    img: "https://images.unsplash.com/photo-1506806732259-39c2d0268443?w=900&q=80&auto=format&fit=crop",
+    img: "src\\assets\\organic prod1.jpg",
     items: [{ name: "Heirloom Tomatoes", price: "KES150/kg" }],
   },
   {
     id: 3,
     name: "Nakuru Bakehouse",
     specialty: "bakery",
-    img: "https://images.unsplash.com/photo-1541497411911-ec8fddfafb0b?w=900&q=80&auto=format&fit=crop",
+    img: "src\\assets\\boulangerie.jpg",
     items: [{ name: "Sourdough Loaf", price: "KES220" }],
   },
 ];

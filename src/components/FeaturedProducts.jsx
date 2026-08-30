@@ -1,4 +1,5 @@
 import React from "react";
+import ProductCard from "./ProductCard";
 
 const SAMPLE_PRODUCTS = [
   { id: 1, title: "Heirloom Tomatoes", vendor: "Root & Field", price: "KES150/kg", img: "src\\assets\\tomatoes.jpg" },

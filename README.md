@@ -1,4 +1,4 @@
-# 🌱 Agri-Market 
+# 🌱 Agreen-Market 
 
 A responsive React web application for discovering local farmers, browsing fresh produce, and managing a simple market shopping experience.
 

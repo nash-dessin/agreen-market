@@ -5,7 +5,7 @@
     "location": "Karen, Nairobi",
     "speciality": "Produce",
     "description": "Tender sukuma wiki, managu, terere and other leafy greens cultivated in the cool Central Highlands just outside Nairobi.",
-    "image": "src\\assets\\wanjikus-kitchen-garden.jpg"
+    "image": "public\\assets\\wanjikus-kitchen-garden.jpg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "location": "Kiambu",
     "speciality": "Grains & staples",
     "description": "Small-batch milled grains and staples rooted in the fertile highland plains and Swahili coastal pantry traditions.",
-    "image": "src\\assets\\rift-valley-grains.jpg"
+    "image": "public\\assets\\rift-valley-grains.jpg"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "location": "Ngong",
     "speciality": "Flowers",
     "description": "Fresh-cut stems and King Protea arrangements shaped by the cool breeze and rich soils of the Ngong escarpment.",
-    "image": "src\\assets\\ngong-hills-blooms.jpg"
+    "image": "public\\assets\\ngong-hills-blooms.jpg"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "location": "Mtwapa",
     "speciality": "Preserved goods",
     "description": "Sun-ripened passion fruit jam and coastal fruit preserves made with citrus, ginger and sweet-spiced Swahili flavour.",
-    "image": "src\\assets\\mama-akinyi-preserves.jpg"
+    "image": "public\\assets\\mama-akinyi-preserves.jpg"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "location": "Kiambu",
     "speciality": "Produce",
     "description": "Avocados, nduma and root vegetables grown in the misty Central Highlands with careful soil stewardship and rain-fed farming.",
-    "image": "src\\assets\\kiambu-valley-farm.jpg"
+    "image": "public\\assets\\kiambu-valley-farm.jpg"
   },
   {
     "id": 6,
@@ -45,6 +45,6 @@
     "location": "Karen, Nairobi",
     "speciality": "Baked Goods",
     "description": "Wimbi sourdough and mkate wa sinia shaped by Kenyan bakery traditions and the warm, welcoming flavours of tea-time tables.",
-    "image": "src\\assets\\zawadi-patisserie.jpg"
+    "image": "public\\assets\\zawadi-patisserie.jpg"
   }
 ]

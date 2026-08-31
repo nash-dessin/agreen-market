@@ -9,7 +9,7 @@ export default function Checkout() {
   const [guestReceiptSent, setGuestReceiptSent] = useState(false);
 
   function handleContinueAsGuest() {
-    // just to simulate sending receipt to guest email
+
     setGuestReceiptSent(true);
     clearCart();
   }

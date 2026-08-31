@@ -16,7 +16,7 @@ export default function CartPage() {
 
   function handleCheckout(e) {
     e.preventDefault();
-    // passing in order details to checkout page
+
     const order = { items: cart, subtotal, deliveryFee, total, guest };
     navigate("/checkout", { state: { order } });
   }

@@ -7,11 +7,10 @@ export default function ProductCard({ product = {} }) {
   const farmName = product.farm || product.vendor || "Local farm";
   const productName = product.name || product.title || "Product";
 
-  // helper to extract numeric price from various product.price formats
   function parsePrice(val) {
     if (typeof val === 'number' && !Number.isNaN(val)) return val;
     if (typeof val === 'string') {
-      // remove commas and find the first number-like substring
+
       const cleaned = val.replace(/,/g, '');
       const m = cleaned.match(/[0-9]+(?:\.[0-9]+)?/);
       if (m) return parseFloat(m[0]);
@@ -25,7 +24,7 @@ export default function ProductCard({ product = {} }) {
     : (product.price ? String(product.price) : 'Price not available');
 
   function handleAdd() {
-    // normalize item shape for the cart
+
     const itemPrice = Number.isFinite(parsedPrice) ? parsedPrice : 0;
     const item = {
       id: product.id || product._id || product.sku || productName,

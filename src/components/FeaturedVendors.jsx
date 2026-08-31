@@ -6,7 +6,7 @@ const SAMPLE_VENDORS = [
     name: "Wanjiku's Kitchen Garden",
     category: "produce",
     location: "Karen, Nairobi",
-    img: "src\\assets\\wanjikus-kitchen-garden.jpg",
+    img: "public\\assets\\wanjikus-kitchen-garden.jpg",
     items: [
       { name: "Sukuma wiki", price: "KSh 30 / bunch" },
       { name: "Hass avocado", price: "KSh 150 / fruit" },
@@ -18,7 +18,7 @@ const SAMPLE_VENDORS = [
     name: "Zawadi Patisserie",
     category: "baked goods",
     location: "Lang'ata",
-    img: "src\\assets\\zawadi-patisserie.jpg",
+    img: "public\\assets\\zawadi-patisserie.jpg",
     items: [
       { name: "Wimbi sourdough", price: "KSh 260 / loaf" },
       { name: "Cinnamon buns", price: "KSh 240 / batch" },
@@ -30,7 +30,7 @@ const SAMPLE_VENDORS = [
     name: "Ngong Hills Blooms",
     category: "flowers",
     location: "Ngong",
-    img: "src\\assets\\ngong-hills-blooms.jpg",
+    img: "public\\assets\\ngong-hills-blooms.jpg",
     items: [
       { name: "King Protea", price: "KSh 420 / stem" },
       { name: "Sunflower bundle", price: "KSh 380 / bunch" },
@@ -42,7 +42,7 @@ const SAMPLE_VENDORS = [
     name: "Mama Akinyi Preserves",
     category: "preserved",
     location: "Mtwapa",
-    img: "src\\assets\\mama-akinyi-preserves.jpg",
+    img: "public\\assets\\mama-akinyi-preserves.jpg",
     items: [
       { name: "Passion fruit jam", price: "KSh 650 / jar" },
       { name: "Citrus marmalade", price: "KSh 520 / jar" },

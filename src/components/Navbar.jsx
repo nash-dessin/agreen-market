@@ -1,94 +1,64 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
 
 const navItems = [
   { label: 'Home', path: '/' },
   { label: 'Products', path: '/products' },
   { label: 'Vendors', path: '/vendors' },
-  { label: 'In Season', path: '/in-season' },
   { label: 'About', path: '/about' },
   { label: 'Your Cart', path: '/cart' },
 ];
 
 function Navbar() {
-  return (
-    <nav style={styles.navbar}>
-      <div style={styles.brandWrap}>
-        <span style={styles.brandMark}>A</span>
-        <span style={styles.brandName}>AgriMarket</span>
-      </div>
+  const { itemCount } = useCart();
 
-      <div style={styles.linksWrap}>
+  return (
+    <nav className="site-nav">
+      <NavLink to="/" className="nav-brand" end>
+        <span className="brand-mark">A</span>
+        <span className="brand-name">AgriMarket</span>
+      </NavLink>
+
+      <div className="nav-links">
         {navItems.map((item) => (
           <NavLink
             key={item.path}
             to={item.path}
             end={item.path === '/'}
-            style={({ isActive }) => ({
-              ...styles.link,
-              ...(isActive ? styles.activeLink : {}),
-            })}
+            className={({ isActive }) => (isActive ? 'nav-link is-active' : 'nav-link')}
           >
-            {item.label}
+            {item.path === '/cart' ? (
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+                <span>{item.label}</span>
+                <span
+                  aria-hidden
+                  style={{
+                    minWidth: 20,
+                    height: 20,
+                    padding: '0 6px',
+                    borderRadius: 10,
+                    background: '#4d7c0f',
+                    color: '#fff',
+                    fontSize: 12,
+                    fontWeight: 700,
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  {itemCount}
+                </span>
+              </span>
+            ) : (
+              item.label
+            )}
           </NavLink>
         ))}
       </div>
     </nav>
   );
-}
 
-const styles = {
-  navbar: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    background: '#14532d',
-    color: '#f0fdf4',
-    padding: '14px 32px',
-    boxShadow: '0 2px 10px rgba(20, 83, 45, 0.15)',
-    position: 'sticky',
-    top: 0,
-    zIndex: 100,
-  },
-  brandWrap: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '10px',
-  },
-  brandMark: {
-    display: 'inline-flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '32px',
-    height: '32px',
-    borderRadius: '50%',
-    background: '#facc15',
-    color: '#14532d',
-    fontWeight: 800,
-  },
-  brandName: {
-    fontSize: '1.2rem',
-    fontWeight: 700,
-    letterSpacing: '0.04em',
-  },
-  linksWrap: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '18px',
-    flexWrap: 'wrap',
-  },
-  link: {
-    color: '#ecfdf5',
-    textDecoration: 'none',
-    fontWeight: 600,
-    padding: '8px 12px',
-    borderRadius: '999px',
-    transition: 'all 0.2s ease',
-  },
-  activeLink: {
-    background: '#f0fdf4',
-    color: '#14532d',
-  },
-};
+}
 
 export default Navbar;

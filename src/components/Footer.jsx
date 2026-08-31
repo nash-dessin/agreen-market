@@ -1,15 +1,20 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer id="newsletter" className="section footer" aria-label="site footer">
-      <div>
-        <strong>Newsletter</strong>
-        <div className="subtle">Sign up for weekly notes on vendors and seasonal picks.</div>
-      </div>
-      <div style={{ display: "flex", gap: 12 }}>
-        <a href="#" className="filter-btn">Vendor Application</a>
-        <a href="#" className="filter-btn">Contact</a>
+    <footer id="newsletter" className="site-footer" aria-label="Site footer">
+      <div className="footer-row">
+        <div className="footer-brand">
+          <strong>AgriMarket</strong>
+          <p className="footer-note">Weekly notes on seasonal produce, makers, and market news.</p>
+        </div>
+
+        <div className="footer-links">
+          <Link to="/not-found" className="footer-link">Newsletter</Link>
+          <Link to="/not-found" className="footer-link">Vendor application</Link>
+          <Link to="/not-found" className="footer-link">Contact</Link>
+        </div>
       </div>
     </footer>
   );

@@ -1,10 +1,10 @@
-import React from "react";
 import ProductCard from "./ProductCard";
 
 const SAMPLE_PRODUCTS = [
-  { id: 1, title: "Heirloom Tomatoes", vendor: "Root & Field", price: "KES150/kg", img: "src\\assets\\tomatoes.jpg" },
-  { id: 2, title: "Sourdough Loaf", vendor: "Hearth Bakehouse", price: "KES220", img: "src\\assets\\sourdough.jpg" },
-  { id: 3, title: "Farm Bouquet", vendor: "Petal & Stem", price: "KES450", img: "src\\assets\\rose-bouquet.jpg" },
+  { id: 1, title: "Sukuma wiki", vendor: "Wanjiku's Kitchen Garden", price: 30, unit: "bunch", img: "/src/assets/sukuma-wiki.jpg" },
+  { id: 2, title: "Wimbi sourdough", vendor: "Zawadi Patisserie", price: 260, unit: "loaf", img: "/src/assets/wimbi-sourdough.jpg" },
+  { id: 3, title: "King Protea", vendor: "Ngong Hills Blooms", price: 420, unit: "stem", img: "/src/assets/king-protea.jpg" },
+  { id: 4, title: "Passion fruit jam", vendor: "Mama Akinyi Preserves", price: 650, unit: "jar", img: "/src/assets/passion-fruit-jam.jpg" },
 ];
 
 export default function FeaturedProducts() {

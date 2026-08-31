@@ -8,7 +8,7 @@
     "unit": "bunch",
     "vendor": "Wanjiku's Kitchen Garden",
     "available": true,
-    "image": "public\\assets\\sukuma wiki.jpg",
+    "image": "src\\assets\\sukuma wiki.jpg",
     "description": "Leafy greens grown in Karen's cool rainy season and cooked with onions, tomatoes and a touch of turmeric."
   },
   {
@@ -20,7 +20,7 @@
     "unit": "bunch",
     "vendor": "Wanjiku's Kitchen Garden",
     "available": true,
-    "image": "public\\assets\\managu.jpg",
+    "image": "src\\assets\\managu.jpg",
     "description": "Dark, nutritious leaves picked fresh from the Central Highlands and prized for hearty stews."
   },
   {
@@ -32,7 +32,7 @@
     "unit": "bunch",
     "vendor": "Kiambu Valley Farm",
     "available": true,
-    "image": "public\\assets\\nduma.jpg",
+    "image": "src\\assets\\nduma.jpg",
     "description": "Root vegetables grown in the misty Kiambu valley, tender and naturally sweet when boiled or roasted."
   },
   {
@@ -44,7 +44,7 @@
     "unit": "bunch",
     "vendor": "Wanjiku's Kitchen Garden",
     "available": true,
-    "image": "public\\assets\\terere.jpg",
+    "image": "src\\assets\\terere.jpg",
     "description": "A beloved Kenyan greens staple often stirred with coconut and spices for a richer, earthy finish."
   },
   {
@@ -56,7 +56,7 @@
     "unit": "loaf",
     "vendor": "Zawadi Patisserie",
     "available": true,
-    "image": "public\\assets\\wimbi-sourdough.jpg",
+    "image": "src\\assets\\wimbi-sourdough.jpg",
     "description": "Slow-fermented wheat bread with a tangy, airy crumb and roots in Kenyan bakery traditions."
   },
   {
@@ -68,7 +68,7 @@
     "unit": "loaf",
     "vendor": "Zawadi Patisserie",
     "available": true,
-    "image": "public\\assets\\mkate-wa-sinia.jpg",
+    "image": "src\\assets\\mkate-wa-sinia.jpg",
     "description": "Round, golden bread baked in the traditional sinia style, perfect with tea and stew."
   },
   {
@@ -80,7 +80,7 @@
     "unit": "jar",
     "vendor": "Mama Akinyi Preserves",
     "available": true,
-    "image": "public\\assets\\passion-fruit-jam.jpg",
+    "image": "src\\assets\\passion-fruit-jam.jpg",
     "description": "Tart, fragrant passion fruit turned into a silky spread with bright citrus and coastal sweetness."
   },
   {
@@ -92,7 +92,7 @@
     "unit": "fruit",
     "vendor": "Kiambu Valley Farm",
     "available": true,
-    "image": "public\\assets\\hass-avocado.jpg",
+    "image": "src\\assets\\hass-avocado.jpg",
     "description": "Creamy Hass avocados from highland orchards, ideal for salads, sandwiches and fresh guacamole."
   },
   {
@@ -104,7 +104,7 @@
     "unit": "stem",
     "vendor": "Ngong Hills Blooms",
     "available": true,
-    "image": "public\\assets\\king-protea.jpg",
+    "image": "src\\assets\\king-protea.jpg",
     "description": "A striking protea stem gathered from the cool Ngong hills, known for its sculptural beauty and long vase life."
   },
   {
@@ -116,7 +116,7 @@
     "unit": "kg",
     "vendor": "Kiambu Valley Farm",
     "available": true,
-    "image": "public\\assets\\tomatoes.jpg",
+    "image": "src\\assets\\tomatoes.jpg",
     "description": "Juicy red tomatoes grown in the sunny highland farms around Kiambu, ideal for stews, salads and fresh salsa."
   },
   {
@@ -128,7 +128,7 @@
     "unit": "kg",
     "vendor": "Kiambu Valley Farm",
     "available": true,
-    "image": "public\\assets\\cabbage2.jpg",
+    "image": "src\\assets\\cabbage2.jpg",
     "description": "Firm, crisp cabbage from Karen's cool dry season, perfect for stir-fries, soups and pickling."
   },
   {
@@ -140,7 +140,7 @@
     "unit": "jar",
     "vendor": "Mama Akinyi Preserves",
     "available": true,
-    "image": "public\\assets\\herb-chutney.jpg",
+    "image": "src\\assets\\herb-chutney.jpg",
     "description": "A fragrant green chutney with herbs, chilli, and fresh citrus notes that brings life to grilled meats and ugali."
   },
   {
@@ -152,7 +152,7 @@
     "unit": "jar",
     "vendor": "Mama Akinyi Preserves",
     "available": true,
-    "image": "public\\assets\\mango-jam.jpg",
+    "image": "src\\assets\\mango-jam.jpg",
     "description": "Sweet-tart mango jam with a bright tropical finish, made from ripe fruit and slow-simmered with a touch of ginger."
   },
   {
@@ -164,7 +164,7 @@
     "unit": "jar",
     "vendor": "Mama Akinyi Preserves",
     "available": true,
-    "image": "public\\assets\\orange-marmalade.jpg",
+    "image": "src\\assets\\orange-marmalade.jpg",
     "description": "Classic orange marmalade with zesty peel and warm citrus depth, finished in small-batch jars for breakfast tables."
   },
   {
@@ -176,7 +176,7 @@
     "unit": "bunch",
     "vendor": "Kiambu Valley Farm",
     "available": true,
-    "image": "public\\assets\\sweet-bananas.jpg",
+    "image": "src\\assets\\sweet-bananas.jpg",
     "description": "Plump, naturally sweet bananas grown for easy snacking, smoothies and family fruit bowls."
   }, 
   {
@@ -188,7 +188,7 @@
     "unit": "bundle",
     "vendor": "Ngong Hills Blooms",
     "available": true,
-    "image": "public\\assets\\sunflower-bundle.jpg",
+    "image": "src\\assets\\sunflower-bundle.jpg",
     "description": "Bright, cheerful sunflower bundles from the Ngong hills, bringing warmth and colour to gifting tables and courtyards."
   },
   {
@@ -200,7 +200,7 @@
     "unit": "bouquet",
     "vendor": "Ngong Hills Blooms",
     "available": true,
-    "image": "public\\assets\\rose-bouquet.jpg",
+    "image": "src\\assets\\rose-bouquet.jpg",
     "description": "Fresh garden roses picked for lush bouquets, ideal for celebrations and thoughtful weekend gifting."
   },
   {
@@ -212,7 +212,7 @@
     "unit": "bouquet",
     "vendor": "Ngong Hills Blooms",
     "available": true,
-    "image": "public\\assets\\mixed-flowers.jpg",
+    "image": "src\\assets\\mixed-flowers.jpg",
     "description": "An organic mix of seasonal stems and soft blooms arranged to echo the colour and freshness of the highland countryside."
   },
   {
@@ -224,7 +224,7 @@
     "unit": "pack",
     "vendor": "Zawadi Patisserie",
     "available": true,
-    "image": "public\\assets\\whole-wheat-rolls.jpg",
+    "image": "src\\assets\\whole-wheat-rolls.jpg",
     "description": "Soft whole wheat rolls with a nutty finish, baked daily for breakfast spreads and tea-time snacks."
   }
 ]

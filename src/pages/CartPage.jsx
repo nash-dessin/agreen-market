@@ -81,7 +81,7 @@ export default function CartPage() {
             </form>
 
             <div style={{ marginTop: 12 }}>
-              <p>Already have an account? <NavLink to="/AuthLogin" state={{ from: '/checkout' }}>Login</NavLink> or <NavLink to="/AuthSignUp" state={{ from: '/checkout' }}>Sign up</NavLink></p>
+              <p>Already have an account? <NavLink to="/login" state={{ from: '/checkout' }}>Login</NavLink> or <NavLink to="/signup" state={{ from: '/checkout' }}>Sign up</NavLink></p>
             </div>
           </aside>
         </div>

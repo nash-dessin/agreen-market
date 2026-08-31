@@ -1,14 +1,47 @@
 import React from "react";
+import { useCart } from "../context/CartContext";
+
 
 export default function ProductCard({ product = {} }) {
+  const { addItem } = useCart();
   const farmName = product.farm || product.vendor || "Local farm";
   const productName = product.name || product.title || "Product";
-  const priceText = product.price ? `${product.price}` : "Price not available";
+
+  // helper to extract numeric price from various product.price formats
+  function parsePrice(val) {
+    if (typeof val === 'number' && !Number.isNaN(val)) return val;
+    if (typeof val === 'string') {
+      // remove commas and find the first number-like substring
+      const cleaned = val.replace(/,/g, '');
+      const m = cleaned.match(/[0-9]+(?:\.[0-9]+)?/);
+      if (m) return parseFloat(m[0]);
+    }
+    return NaN;
+  }
+
+  const parsedPrice = parsePrice(product.price);
+  const priceText = Number.isFinite(parsedPrice)
+    ? `KSH ${parsedPrice.toFixed(2)}${product.unit ? ' / ' + product.unit : ''}`
+    : (product.price ? String(product.price) : 'Price not available');
+
+  function handleAdd() {
+    // normalize item shape for the cart
+    const itemPrice = Number.isFinite(parsedPrice) ? parsedPrice : 0;
+    const item = {
+      id: product.id || product._id || product.sku || productName,
+      name: productName,
+      price: itemPrice,
+      vendor: farmName,
+      img: product.img || product.image || '',
+    };
+
+    addItem(item, 1);
+  }
 
   return (
     <article className="vendor-card" style={{ cursor: "default" }} aria-label={productName}>
       <div className="vendor-media">
-        <img alt={productName} src={product.img} style={{ width: "100%", height: 180, objectFit: "cover" }} />
+        <img alt={productName} src={product.img || product.image} style={{ width: "100%", height: 180, objectFit: "cover" }} />
       </div>
 
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 12 }}>
@@ -21,6 +54,7 @@ export default function ProductCard({ product = {} }) {
 
       <button
         type="button"
+        onClick={handleAdd}
         style={{
           width: "100%",
           marginTop: 12,

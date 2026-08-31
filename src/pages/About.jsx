@@ -5,10 +5,10 @@ const About = () => {
     <section style={styles.page}>
       <div style={styles.hero}>
         <p style={styles.eyebrow}>Fresh from the farm</p>
-        <h1 style={styles.title}>About Green Basket Market</h1>
+        <h1 style={styles.title}>About AgriMarket</h1>
         <p style={styles.subtitle}>
-          A vibrant farmers' market in Karen, Nairobi, bringing together local
-          growers, artisans, and food lovers in one joyful community space.
+          A vibrant farmers' market in Nairobi, bringing together local
+          growers, bakers, florists and food lovers in one joyful community space.
         </p>
       </div>
 
@@ -16,20 +16,10 @@ const About = () => {
         <div style={styles.card}>
           <h2 style={styles.cardTitle}>Our Story</h2>
           <p style={styles.text}>
-            Green Basket Market was created to make it easier for families in
+            AgriMarket was created to make it easier for families in
             Karen and beyond to buy fresh, seasonal produce directly from the
             people who grow it. We believe food should be honest, healthy, and
             rooted in community.
-          </p>
-        </div>
-
-        <div style={styles.card}>
-          <h2 style={styles.cardTitle}>Karen, Nairobi</h2>
-          <p style={styles.text}>
-            Based in the green and welcoming neighborhood of Karen, our market
-            celebrates the richness of Nairobi's local food culture. We connect
-            shoppers with trusted farmers, backyard growers, and small food
-            makers from the surrounding region.
           </p>
         </div>
 

@@ -4,7 +4,7 @@ A responsive React web application for discovering local farmers, browsing fresh
 
 ## 📌 Project Overview
 
-**AgriMarket** is a frontend web application designed to connect customers with local farmers and vendors.
+**AgreenMarket** is a frontend web application designed to connect customers with local farmers and vendors.
 
 Users can browse available produce, search and filter products, view vendor and market information, and manage selected items through a simple shopping cart. The application also integrates an external API to provide additional information relevant to the market experience.
 

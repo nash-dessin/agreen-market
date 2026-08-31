@@ -52,7 +52,7 @@ export default function AuthSignUp() {
           <aside className="relative overflow-hidden bg-emerald-900 p-8 text-white sm:p-10">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(251,191,36,0.35),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(16,185,129,0.35),_transparent_35%)]" />
             <div className="relative z-10">
-              <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-100">AgriMarket</div>
+              <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-100">AgreenMarket</div>
               <h1 className="max-w-sm text-4xl font-bold leading-tight">Save your details for quick, stress-free deliveries.</h1>
               <p className="mt-5 max-w-md text-sm leading-7 text-emerald-100/90">Create your account to securely store your shipping address, billing information, and preferred payment method for all future orders.</p>
             </div>

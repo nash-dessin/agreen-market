@@ -5,7 +5,7 @@ const About = () => {
     <section style={styles.page}>
       <div style={styles.hero}>
         <p style={styles.eyebrow}>Fresh from the farm</p>
-        <h1 style={styles.title}>About AgriMarket</h1>
+        <h1 style={styles.title}>About AgreenMarket</h1>
         <p style={styles.subtitle}>
           A vibrant farmers' market in Nairobi, bringing together local
           growers, bakers, florists and food lovers in one joyful community space.
@@ -16,7 +16,7 @@ const About = () => {
         <div style={styles.card}>
           <h2 style={styles.cardTitle}>Our Story</h2>
           <p style={styles.text}>
-            AgriMarket was created to make it easier for families in
+            AgreenMarket was created to make it easier for families in
             Karen and beyond to buy fresh, seasonal produce directly from the
             people who grow it. We believe food should be honest, healthy, and
             rooted in community.

@@ -6,7 +6,7 @@ export default function Footer() {
     <footer id="newsletter" className="site-footer" aria-label="Site footer">
       <div className="footer-row">
         <div className="footer-brand">
-          <strong>AgriMarket</strong>
+          <strong>AgreenMarket</strong>
           <p className="footer-note">Weekly notes on seasonal produce, makers, and market news.</p>
         </div>
 

@@ -17,7 +17,7 @@ function Navbar() {
     <nav className="site-nav">
       <NavLink to="/" className="nav-brand" end>
         <span className="brand-mark">A</span>
-        <span className="brand-name">AgriMarket</span>
+        <span className="brand-name">AgreenMarket</span>
       </NavLink>
 
       <div className="nav-links">

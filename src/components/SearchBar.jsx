@@ -9,33 +9,16 @@ export default function SearchBar({ onSearch }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ display: 'flex', gap: '0.5rem', marginBottom: '1rem' }}>
+    <form onSubmit={handleSubmit} className="search-form">
       <input
         type="text"
         value={searchTerm}
         onChange={(event) => setSearchTerm(event.target.value)}
-        placeholder="🔍 Search for produce..."
+        placeholder="Search produce"
         aria-label="Search for produce"
-        style={{
-          flex: 1,
-          padding: '0.75rem 1rem',
-          border: '1px solid #d1d5db',
-          borderRadius: '0.5rem',
-          fontSize: '1rem',
-        }}
+        className="search-input"
       />
-      <button
-        type="submit"
-        style={{
-          padding: '0.75rem 1rem',
-          border: 'none',
-          borderRadius: '0.5rem',
-          backgroundColor: '#16a34a',
-          color: '#fff',
-          fontWeight: '600',
-          cursor: 'pointer',
-        }}
-      >
+      <button type="submit" className="primary-btn">
         Search
       </button>
     </form>

@@ -1,21 +1,58 @@
 import { useState } from "react";
 import ProductCard from "../components/ProductCard";
 import mockProducts from '../data & services/mockProductData.json';
+import sukumaWikiImg from "../assets/sukuma-wiki.jpg";
+import managuImg from "../assets/managu.jpg";
+import ndumaImg from "../assets/nduma.jpg";
+import terereImg from "../assets/terere.jpg";
+import wimbiSourdoughImg from "../assets/wimbi-sourdough.jpg";
+import mkateWaSiniaImg from "../assets/mkate-wa-sinia.jpg";
+import passionFruitJamImg from "../assets/passion-fruit-jam.jpg";
+import hassAvocadoImg from "../assets/hass-avocado.jpg";
+import kingProteaImg from "../assets/king-protea.jpg";
+import tomatoesImg from "../assets/tomatoes.jpg";
+import cabbageImg from "../assets/cabbage2.jpg";
+import herbChutneyImg from "../assets/herb-chutney.jpg";
+import mangoJamImg from "../assets/mango-jam.jpg";
+import orangeMarmaladeImg from "../assets/orange-marmalade.jpg";
+import sweetBananasImg from "../assets/sweet-bananas.jpg";
+import sunflowerBundleImg from "../assets/sunflower-bundle.jpg";
+import roseBouquetImg from "../assets/rose-bouquet.jpg";
+import mixedFlowersImg from "../assets/mixed-flowers.jpg";
+import wholeWheatRollsImg from "../assets/whole-wheat-rolls.jpg";
 
+const imageMap = {
+  "sukuma-wiki.jpg": sukumaWikiImg,
+  "managu.jpg": managuImg,
+  "nduma.jpg": ndumaImg,
+  "terere.jpg": terereImg,
+  "wimbi-sourdough.jpg": wimbiSourdoughImg,
+  "mkate-wa-sinia.jpg": mkateWaSiniaImg,
+  "passion-fruit-jam.jpg": passionFruitJamImg,
+  "hass-avocado.jpg": hassAvocadoImg,
+  "king-protea.jpg": kingProteaImg,
+  "tomatoes.jpg": tomatoesImg,
+  "cabbage2.jpg": cabbageImg,
+  "herb-chutney.jpg": herbChutneyImg,
+  "mango-jam.jpg": mangoJamImg,
+  "orange-marmalade.jpg": orangeMarmaladeImg,
+  "sweet-bananas.jpg": sweetBananasImg,
+  "sunflower-bundle.jpg": sunflowerBundleImg,
+  "rose-bouquet.jpg": roseBouquetImg,
+  "mixed-flowers.jpg": mixedFlowersImg,
+  "whole-wheat-rolls.jpg": wholeWheatRollsImg,
+};
 const getDefaultProducts = () =>
-  mockProducts.map((product) => ({
-    id: product.id,
-    name: product.name,
-    category: product.category,
-    price: product.price,
-    unit: product.unit,
-    image: product.image,
-    vendor: product.vendor,
-    available: product.available,
-    description: product.description,
-  }));
+  mockProducts.map((product) => {
+    const file = product.image.split("\\").pop().split("/").pop();
 
-  const defaultProducts= getDefaultProducts();
+    return {
+      ...product,
+      image: imageMap[file],
+    };
+  });
+
+const defaultProducts= getDefaultProducts();
 
 export default function Product({ products = defaultProducts }) {
   const [searchTerm, setSearchTerm] = useState('');

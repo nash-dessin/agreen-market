@@ -8,7 +8,7 @@
     "unit": "bunch",
     "vendor": "Wanjiku's Kitchen Garden",
     "available": true,
-    "image": "public\\assets\\sukuma wiki.jpg",
+    "image": "public\\assets\\sukuma-wiki.jpg",
     "description": "Leafy greens grown in Karen's cool rainy season and cooked with onions, tomatoes and a touch of turmeric."
   },
   {
@@ -29,7 +29,7 @@
     "category": "Produce",
     "price": 60,
     "currency": "KES",
-    "unit": "bunch",
+    "unit": "piece",
     "vendor": "Kiambu Valley Farm",
     "available": true,
     "image": "public\\assets\\nduma.jpg",
@@ -89,7 +89,7 @@
     "category": "Produce",
     "price": 150,
     "currency": "KES",
-    "unit": "fruit",
+    "unit": "kg",
     "vendor": "Kiambu Valley Farm",
     "available": true,
     "image": "public\\assets\\hass-avocado.jpg",

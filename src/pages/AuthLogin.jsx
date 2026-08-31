@@ -48,7 +48,7 @@ export default function AuthLogin() {
           <aside className="relative overflow-hidden bg-emerald-900 p-8 text-white sm:p-10">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(251,191,36,0.35),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(16,185,129,0.35),_transparent_35%)]" />
             <div className="relative z-10">
-              <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-100">AgreenMarket</div>
+              <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-100"></div>
 
               <h1 className="max-w-sm text-4xl font-bold leading-tight">Welcome back</h1>
 
@@ -58,7 +58,6 @@ export default function AuthLogin() {
 
           <main className="p-6 sm:p-8 lg:p-10">
             <div className="mb-8">
-              <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-600">Welcome back</p>
               <h2 className="mt-2 text-3xl font-bold text-slate-900">Sign in</h2>
             </div>
 
